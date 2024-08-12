@@ -1,11 +1,14 @@
-# ETHTestToken
-Criação de Rede de Testes com Ganache para realizar com a IDE Remix o Deploy do Contrato Inteligente programado em Solidity 
+# CriandoNFTPokemon
+Desenvolvimento de Smart Contract para criação de NFTs de pokemon com sistema de batalhas, o código de contrato inteligente foi desenvolvido utilizando a linguagem de programação Solidity e o padrão de tokens ERC-721 com auxilio da biblioteca Open Zeppelin.
 
 ## Tecnologias Utilizadas
 
+- Solidity: Linguagem de Programação Orientada a Smart Contracts
 - Ganache: Ambiente de Desenvolvimento Ethereum
 - MetaMask: Carteira Crypto para navegadores Web
 - Remix: Ethereum IDE
+- IPFS: Sistema de arquivos distribuído
+- Open Zeppelin: Conjunto de ferramentas e biblioteca de contratos inteligentes
 
 ## Como Usar
 
@@ -20,7 +23,7 @@ Link para a criação da carteira: https://metamask.io/
 3. Configurar Meta Mask para acessar a Test Net criada pelo Ganache:
 -   Nome: DIONet
 -   Token: DIO
--   Chain ID: 5777 (Igual Chain ID no Ganache)
+-   Chain ID: 1337 (Igual Chain ID no Ganache)
 -   RPC URL: HTTP://127.0.0.1:7545 (Igual RPC URL no Ganache)
 
 
@@ -28,20 +31,36 @@ Link para a criação da carteira: https://metamask.io/
 Acessar online a IDE Remix e caminhar até a sessão "Git", aonde encontrara a aba "Clone"
 
 ```bash
-git clone https://github.com/6uilhermeTeixeira/RequisitandoDadosAPICriptomoedas.git
+git clone https://github.com/6uilhermeTeixeira/CriandoNFTPokemon.git
 ```
 
 5. Realize a compilação e o Deploy do contrato na IDE Remix
-- Após clonar repositório no explorador de arquivos caminhar até o arquivo "DIOToken.sol"
-- Após abrir arquivo "DIOToken.sol" caminhar até o "Solidity Compiler" no menu lateral e clicar em "Compile DIOToken.sol"
+- Após clonar repositório no explorador de arquivos caminhar até o arquivo "PokeDIO.sol" no caminho ../contracts/CriandoNFTPokemon
+- Após abrir arquivo "PokeDIO.sol" caminhar até o "Solidity Compiler" no menu lateral e clicar em "Compile PokeDIO.sol"
 - Após Compilar caminhar até "Deploy & run transactions" no menu lateral
-- No campo "Environment" selecionar "Wallet Connect" e conectar a sua Carteira MetaMask.
-- No campo "Contract" Selecionar "DIOToken - contracts/DIOToken.sol"
+- No campo "Environment" selecionar "Injected Provider - Metamask" e conectar a sua Carteira MetaMask.
+- No campo "Contract" Selecionar "PokeDIO - contracts/PokeDIO.sol"
 - Por fim clicar em "Deploy"
+
+6. Instalar IPFS
+
+Link para a instalação: https://docs.ipfs.tech/install/ipfs-desktop/
+
+7. Carregar Arquivos de Imagem no IPFS
+- Após Finalizar o Download, Abrir Aplicação
+- Caminhar até a sessão "files" no menu lateral
+- Clicar no Botão "+ import" e importar as imagens dos NFTS de Pokemon (Podem ser PNGS baixados no Google)
+
+8. Interagir com o contrato para criar pokemons e batalhar entre eles
+- Após realizar o deploy na Remix IDE, caminhar até "Deployed Contracts" no menu lateral
+- Havera diversas opções, começaremo com "createNewPokemon"
+- Preencher os campos com o Nome do Pokemon, o endereço ao qual sera enviado, e o link de enderaçamento da imagem dentro do IPFS
+- Realizar essa etapa diversas vezes atribuindo pokemons a diferentes endereços
+
 
 ## Resultado
 
-No menu lateral surgiram os campos para interação com a block chain e após o deploy do contrato sera possivel acompanhar cada transação dentro do blockexplorer do Ganache.
+O contrato inteligente sera registrado no Block Chain de testes e no menu lateral surgiram os campos para interação com o contrato.
 
 
 # Espaço de Trabalho Padrão REMIX
