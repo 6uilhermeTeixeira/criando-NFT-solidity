@@ -1,6 +1,6 @@
 # CriandoNFTPokemon
 Desenvolvimento de Smart Contract para criação de NFTs de pokemon com sistema de batalhas, o código de contrato inteligente foi desenvolvido utilizando a linguagem de programação Solidity e o padrão de tokens ERC-721 com auxilio da biblioteca Open Zeppelin.
-Projeto desenvolvido durante BootCamp Binance - Blockchain Developer with Solidity realizado pela DIO (https://www.dio.me/)
+Projeto desenvolvido durante BootCamp 'Binance - Blockchain Developer with Solidity' realizado pela DIO (https://www.dio.me/)
 
 ## Tecnologias Utilizadas
 
