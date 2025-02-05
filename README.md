@@ -1,4 +1,4 @@
-# CriandoNFTPokemon
+# Criando NFT Solidity
 Desenvolvimento de Smart Contract para criação de NFTs de pokemon com sistema de batalhas, o código de contrato inteligente foi desenvolvido utilizando a linguagem de programação Solidity e o padrão de tokens ERC-721 com auxilio da biblioteca Open Zeppelin.
 Projeto desenvolvido durante BootCamp 'Binance - Blockchain Developer with Solidity' realizado pela DIO (https://www.dio.me/)
 
@@ -32,7 +32,7 @@ Link para a criação da carteira: https://metamask.io/
 Acessar online a IDE Remix e caminhar até a sessão "Git", aonde encontrara a aba "Clone"
 
 ```bash
-git clone https://github.com/6uilhermeTeixeira/CriandoNFTPokemon.git
+git clone https://github.com/6uilhermeTeixeira/criando-NFT-solidity.git
 ```
 
 5. Realize a compilação e o Deploy do contrato na IDE Remix
